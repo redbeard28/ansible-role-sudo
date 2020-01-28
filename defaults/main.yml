@@ -1,4 +1,6 @@
 ---
-users:
-  - {name: myusername, use_passwd: false}
-  - {name: titi, use_passwd: true}
+sudoers:
+  - {name: 'myusername', sudouser_append: true}
+  - {name: 'myotherusername', sudouser_append: true}
+
+sudoes_group: 'wheel'
