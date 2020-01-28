@@ -1,6 +1,4 @@
 ---
-sudoers:
-  - {name: 'myusername', sudouser_append: true}
-  - {name: 'myotherusername', sudouser_append: true}
+sudoers: []
 
 sudoes_group: 'wheel'

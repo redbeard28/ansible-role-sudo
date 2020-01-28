@@ -1,7 +1,7 @@
 ANSIBLE-ROLE-SUDO
 =================
 
-Ansible role add sudo user in sudoers.d folder.
+Ansible role add sudo user in group with sudo NOPASSWORD access.
 
 
 
@@ -32,9 +32,12 @@ Role Variables
 
 ```yaml
 ---
-users:
-  - {name: myusername, use_passwd: false}
-  - {name: titi, use_passwd: true}
+sudoers:
+  - {name: 'riri', sudouser_append: true}
+  - {name: 'fifi', sudouser_append: true}
+  - {name: 'loulou', sudouser_append: true}
+
+sudoes_group: 'wheel'
 ```
 
 Dependencies
