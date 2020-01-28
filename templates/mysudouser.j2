@@ -1,0 +1,7 @@
+{% if item.use_passwd == true %}
+{{ item.name }} ALL=(ALL) PASSWD: ALL
+{% else %}
+{{ item.name }} ALL=(ALL) NOPASSWD: ALL
+{% endif %}
+
+

@@ -1,0 +1,9 @@
+---
+- name: Converge
+  hosts: all
+  vars:
+    users:
+      - {name: myusername, use_passwd: false}
+      - {name: titi, use_passwd: true}
+  roles:
+    - role: ansible-role-sudo

@@ -1,0 +1,23 @@
+---
+galaxy_info:
+  author: Jeremie CUADRADO
+  role_name: sudo
+  description: Ansible role add sudo user in sudoers.d folder.
+  license: GPLv3
+  company: Redbeard-Consulting
+  min_ansible_version: 2.9
+
+  platforms:
+    - name: Debian
+      versions:
+        - all
+
+  galaxy_tags:
+    - system
+    - linux
+    - sudo
+    - sudoers
+
+  dependencies:
+    - src: redbeard28.groups
+    - src: redbeard28.users

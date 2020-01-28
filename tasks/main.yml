@@ -1,0 +1,9 @@
+---
+- name: "{{ ansible_distribution | lower }} | {{ ansible_distribution_release }} - Add your users in /etc/sudoers.d folder"
+  template:
+    src: mysudouser.j2
+    dest: "/etc/sudoers.d/{{ item.name }}"
+    owner: 'root'
+    group: 'root'
+    mode: '0644'
+  with_items: "{{ users }}"

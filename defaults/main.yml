@@ -1,0 +1,4 @@
+---
+users:
+  - {name: myusername, use_passwd: false}
+  - {name: titi, use_passwd: true}
