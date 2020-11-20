@@ -18,3 +18,9 @@
     groups: "{{ sudoes_group }}"
     append: "{{ item.sudouser_append }}"
   with_items: "{{ sudoers }}"
+
+- name: "{{ ansible_distribution | lower }} | {{ ansible_distribution_release }} - Be shure to use bash shell !!"
+  user:
+    name: "{{ item.name }}"
+    shell: "{{ item.shell }}"
+  with_items: "{{ sudoers }}"

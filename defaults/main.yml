@@ -1,4 +1,8 @@
 ---
-sudoers: []
+# Exemple. Please remplace my name ;-)
+sudoers:
+  - {name: 'jeremie', sudouser_append: true, shell: '/bin/bash'}
 
-sudoes_group: 'wheel'
+#sudoes_group: 'wheel'
+# Default for debian Buster
+sudoes_group: 'sudo'
